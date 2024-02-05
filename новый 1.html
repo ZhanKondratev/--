@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Книжный Оазис - Ваш идеальный магазин книг</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li:hover > a {
+            background-color: #555;
+        }
+
+        nav ul ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #555;
+        }
+
+        nav ul li:hover > ul {
+            display: inherit;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center; /* Добавлено свойство для центрирования содержимого по центру */
+        }
+
+        .book-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .book {
+            margin: 10px;
+            padding: 10px;
+            border: 2px solid #4CAF50;
+            border-radius: 5px;
+            background-color: #fff;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .book:hover {
+            transform: scale(1.05);
+        }
+
+        .book img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 8px 16px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Книжный Оазис - Ваш идеальный магазин книг</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Каталог</a>
+                <ul>
+                    <li><a href="#">Проза</a></li>
+                    <li><a href="#">Фантастика</a></li>
+                    <li><a href="#">Триллер</a></li>
+					<li><a href="#">Образование</a></li>
+					<li><a href="#">Детектив</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Добро пожаловать в Книжный Оазис!</h2>
+        <p>Книжный Оазис - это место, где каждый человек может откопать настоящий клад книг. Наш магазин предлагает разнообразие произведений различных жанров и тематик. У нас есть что-то для каждого читателя!</p>
+
+        <div class="book-container">
+            <div class="book">
+                <img src="book1.jpg" alt="Книга 1">
+                <h3>За́мок (Франц Кафка)</h3>
+                <p>"Замок" — одно из самых знаменитых произведений Франца Кафки<br/>
+				и один из самых глубоких философских романов ХХ века.<br/>
+				Он был не закончен писателем и впервые опубликован после<br/>
+				его смерти в 1926 году его другом Максом Бродом.</p>
+                <button>Купить</button>
+            </div>
+
+            <div class="book">
+                <img src="book2.jpg" alt="Книга 2">
+                <h3>Красный дракон (Томас Харрис)</h3>
+                <p>В романе есть все составляющие великолепно написанного<br/> 
+				триллера: растущее от страницы к странице напряжение,<br/> 
+				ярко выписанные характеры, достоверная информация о работе<br/> 
+				ФБР, жаждущие славы бюрократы, мешающие следствию, и неумолимо<br/>
+				приближающаяся страшная смерть жертвы.</p>
+                <button>Купить</button>
+            </div>
+
+            <div class="book">
+                <img src="book3.jpg" alt="Книга 3">
+                <h3>Кошмары Аиста Марабу (Ирвин Уэлш) </h3>
+                <p>Уэлш — ключевая фигура современной британской прозы,<br/> 
+				мастер естественного письма и ниспровергатель всяческих условностей.<br/>
+				Вашему вниманию предлагается долгожданное переиздание второго<br/> 
+				романа неоспоримого лидера в новой волне современной британской<br/> 
+				словесности.</p>
+                <button>Купить</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Книжный Оазис - ваш путь к удивительным мирам и бескрайнему воображению!</p>
+        <p>Адрес: Улица Книжная, дом 42 | Телефон: +7 (123) 456-7890 | Сайт: www.knizhny-oazis.ru</p>
+    </footer>
+</body>
+</html>
